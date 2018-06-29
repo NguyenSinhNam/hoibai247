@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'hoibai';
+  src:  url('fonts/hoibai.eot?oi6ub8');
+  src:  url('fonts/hoibai.eot?oi6ub8#iefix') format('embedded-opentype'),
+    url('fonts/hoibai.ttf?oi6ub8') format('truetype'),
+    url('fonts/hoibai.woff?oi6ub8') format('woff'),
+    url('fonts/hoibai.svg?oi6ub8#hoibai') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hoibai' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Close:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-Facebook:before {
+  content: "\e901";
+  color: #13bf1a;
+}
+.icon-Google:before {
+  content: "\e902";
+  color: #13bf1a;
+}
+.icon-Mat-Khau:before {
+  content: "\e903";
+  color: #9d9da9;
+}
+.icon-Ten-Dang-Nhap:before {
+  content: "\e904";
+  color: #9d9da9;
+}
+.icon-anh-dai-dien:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-arr-avatar:before {
+  content: "\e906";
+  color: #747485;
+}
+.icon-arrow-cau-hoi:before {
+  content: "\e907";
+  color: #ff606b;
+}
+.icon-arr-ve-trang-truoc:before {
+  content: "\e908";
+  color: #ff606b;
+}
+.icon-ban-da-ho-tro-thanh-cong:before {
+  content: "\e909";
+}
+.icon-ca-nhan-active:before {
+  content: "\e90a";
+  color: #13bf1a;
+}
+.icon-call-end:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-call-novideo:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-call-no-voice:before {
+  content: "\e90d";
+  color: #fff;
+}
+.icon-call-video:before {
+  content: "\e90e";
+  color: #fff;
+}
+.icon-call-voice:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-cau-hoi-active:before {
+  content: "\e910";
+  color: #13bf1a;
+}
+.icon-cau-hoi-df:before {
+  content: "\e911";
+  color: #9d9da9;
+}
+.icon-chinh-sua:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-chitiet-danhgia:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-chitiet-phanhoi:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-chitiet-thoidiemgoihotro:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-chitiet-thoiluonggoi:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-da-goi:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-danh-sach-hoc-sinh:before {
+  content: "\e918";
+  color: #9d9da9;
+}
+.icon-dia-chi:before {
+  content: "\e919";
+  color: #fff;
+}
+.icon-diem-danh-gia-trung-binh:before {
+  content: "\e91a";
+}
+.icon-dong-lai:before {
+  content: "\e91b";
+  color: #fff;
+}
+.icon-email:before {
+  content: "\e91c";
+  color: #fff;
+}
+.icon-goi-ho-tro-ngay:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-huy-ho-tro:before {
+  content: "\e91e";
+  color: #747485;
+}
+.icon-inbox-top:before {
+  content: "\e91f";
+  color: #9d9da9;
+}
+.icon-lịch-su-cuoc-goi-active:before {
+  content: "\e920";
+  color: #13bf1a;
+}
+.icon-lich-su-cuoc-goi-df:before {
+  content: "\e921";
+  color: #9d9da9;
+}
+.icon-lich-su-goi-luc:before {
+  content: "\e922";
+  color: #747485;
+}
+.icon-loc-ket-qua:before {
+  content: "\e923";
+  color: #fff;
+}
+.icon-loc-thoi-gian:before {
+  content: "\e924";
+  color: #ff606b;
+}
+.icon-luu-thay-doi:before {
+  content: "\e925";
+  color: #fff;
+}
+.icon-next-pagination:before {
+  content: "\e926";
+}
+.icon-phu-huynh:before {
+  content: "\e927";
+  color: #fff;
+}
+.icon-prev-pagination:before {
+  content: "\e928";
+}
+.icon-Shape-Copy-7:before {
+  content: "\e929";
+  color: #9d9da9;
+}
+.icon-so-dien-thoai:before {
+  content: "\e92a";
+  color: #fff;
+}
+.icon-tg-con-nhan-ho-tro:before {
+  content: "\e92b";
+  color: #fff;
+}
+.icon-thenaptop:before {
+  content: "\e92c";
+  color: #9d9da9;
+}
+.icon-thoi-diem-hoi:before {
+  content: "\e92d";
+  color: #747485;
+}
+.icon-thoi-gian-da-cho:before {
+  content: "\e92e";
+  color: #747485;
+}
+.icon-thong-bao-top:before {
+  content: "\e92f";
+  color: #9d9da9;
+}
+.icon-Tim-Kiem-Top:before {
+  content: "\e930";
+  color: #747485;
+}
+.icon-tong-quan-active:before {
+  content: "\e931";
+  color: #13bf1a;
+}
+.icon-tong-quan-df:before {
+  content: "\e932";
+  color: #9d9da9;
+}
+.icon-tong-cong-ban-da-goi:before {
+  content: "\e933";
+}
+.icon-binh-thuong:before {
+  content: "\e934";
+  color: #fff;
+}
+.icon-cauhoi-chohotro:before {
+  content: "\e935";
+}
+.icon-cauhoi-daduochotro:before {
+  content: "\e936";
+}
+.icon-cauhoi-khancap:before {
+  content: "\e937";
+}
+.icon-check-doi-mat-khau:before {
+  content: "\e938";
+  color: #fff;
+}
+.icon-check-the-hop:before {
+  content: "\e939";
+  color: #13bf1a;
+}
+.icon-chitiet-huycauhoi:before {
+  content: "\e93a";
+  color: #df2d39;
+}
+.icon-chitiet-thoidiem-dangcauhoi:before {
+  content: "\e93b";
+  color: #fff;
+}
+.icon-chitiet-thoigian-dacho:before {
+  content: "\e93c";
+  color: #fff;
+}
+.icon-gui-danh-gia:before {
+  content: "\e93d";
+  color: #fff;
+}
+.icon-hieu-bai:before {
+  content: "\e93e";
+  color: #fff;
+}
+.icon-huy-the-nap:before {
+  content: "\e93f";
+  color: #747485;
+}
+.icon-khong-hieu-bai:before {
+  content: "\e940";
+  color: #fff;
+}
+.icon-loai-cau-hoi:before {
+  content: "\e941";
+  color: #747485;
+}
+.icon-nap-the-moi:before {
+  content: "\e942";
+  color: #9d9da9;
+}
+.icon-rat-hieu-bai:before {
+  content: "\e943";
+  color: #fff;
+}
+.icon-tao-cau-hoi-button:before {
+  content: "\e944";
+  color: #fff;
+}
+.icon-tao-cau-hoi-moi:before {
+  content: "\e945";
+  color: #9d9da9;
+}
+.icon-thao-luan-active:before {
+  content: "\e946";
+  color: #13bf1a;
+}
+.icon-thao-luan-df:before {
+  content: "\e947";
+  color: #9d9da9;
+}
+.icon-the-nap-active:before {
+  content: "\e948";
+  color: #13bf1a;
+}
+.icon-thenap-df:before {
+  content: "\e949";
+  color: #9d9da9;
+}
+.icon-thoigian-connhan-hotro:before {
+  content: "\e94a";
+}
+.icon-xoa:before {
+  content: "\e94b";
+  color: #9d9da9;
+}

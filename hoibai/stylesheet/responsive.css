@@ -1,0 +1,126 @@
+/* Media Queries
+-------------------------------------------------------------- */
+@media only screen and (min-width: 1440px) {
+	.container-fluid {
+		max-width: 1470px;
+	}
+}
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media only screen and (max-width: 1366px) {
+}
+
+/* Smaller than standard 1200 */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Smaller than standard 992 */
+@media only screen and (max-width: 991px) {
+	.about-area {
+		padding: 50px 0 20px;
+	}
+
+	.image-about {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.btn-menu {
+		display: block ;
+	}
+
+	.nav-wrap {
+		position: relative;
+		float: none;
+	}		
+
+	#mainnav {
+		display: none;
+	}
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {	
+	.login-area .flex .two-column {
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+
+	.login-container {
+		padding: 40px 15px;
+	}
+
+	.login-form {
+		position: static;
+		max-width: 100%;
+		-webkit-transform: translate(0, 0);
+		   -moz-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		     -o-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+
+
+/* Mobile Portrait Size */
+@media only screen and (max-width: 480px) {	
+	.image-about .image:before {
+		width: 300px;
+		height: 300px;
+		left: -10px;
+		bottom: -30px;
+	}
+
+	.top-title .title,
+	.login-form h1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.login-form h1 {
+		margin-bottom: 15px;
+	}
+
+	.top-title .sub-title {
+		font-size: 18px;
+	}
+
+	.top-title .sub-title:before, .top-title .sub-title.center:after {
+		width: 30px;
+	}
+
+	.top-title .sub-title.center:after {
+		left: -45px;
+	}
+
+	.top-title .sub-title:before {
+		right: -45px;
+	}
+
+	.blog-post .entry-post {
+		padding: 20px;
+	}
+
+}
+
+@media (max-width: 360px) {
+	.header.style1 .logo a {
+		font-size: 24px;
+	}
+
+	.image-about .image:before {
+		width: 250px;
+		height: 250px;
+	}
+
+	.header .button-login a {
+		padding: 0 15px;
+		line-height: 30px;
+		height: 32px;
+		margin-top: 16px;
+	}
+}
+
