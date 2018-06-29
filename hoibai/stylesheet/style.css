@@ -1222,6 +1222,14 @@ ul.list-item li .time {
 	margin-bottom: 30px;
 }
 
+.margin-bottom25 {
+	margin-bottom: 25px;
+}
+
+.margin-bottom20 {
+	margin-bottom: 20px;
+}
+
 .btn-back i {
 	padding-right: 5px;
     font-size: 11px;
@@ -1326,6 +1334,15 @@ ul.list-item li .time {
 	text-align: center;
 	line-height: 22px;
 	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.box-count-time .sub-title {
+	font-size: 14px;
+	color: #333338;
+	text-align: center;
+	line-height: 22px;
+	margin-bottom: 20px;
 }
 
 .box-count-time .time {
@@ -1335,6 +1352,7 @@ ul.list-item li .time {
 	border: 1px #9B9B9B;
 	border-style: dashed;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .box-count-time .time .number-seconds {
@@ -1349,6 +1367,70 @@ ul.list-item li .time {
 	color: #747485;
 	line-height: 16px;
 }
+
+.box-count-time .wrap-time-seconds {
+    position: relative;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.btn-call {
+	display: inline-block;	
+	border-radius: 100px;
+	font-size: 13px;	
+	line-height: 18px;
+	font-weight: 700;
+	padding: 13px 35px;
+	min-width: 174px;
+	text-align: center;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.btn-call i {
+	font-size: 12px;
+}
+
+.btn-call.icon-left i {
+	padding-right: 5px;
+}
+
+.btn-call.icon-right i {
+	padding-left: 5px;
+}
+
+.btn-call.call-support {
+	background: linear-gradient(-145deg, #FF5D6D 0%, #FE914F 100%);
+	box-shadow: 0 2px 4px 0 rgba(59,87,60,0.15);
+	color: #FFFFFF;
+}
+
+.btn-call.call-support:hover {
+	background-image: linear-gradient(-145deg, #13BF1A 0%, #13BF1A 100%);
+	color: #ffffff;
+}
+
+.btn-call.call-support:hover i:before,
+.btn-call.cancle-support:hover i:before  {
+	color: #ffffff;
+}
+
+.btn-call.cancle-support {
+	background: #F8F8F8;
+	border: 2px solid #E6E6EE;
+	font-size: 13px;
+	color: #747485;
+	text-align: center;
+	line-height: 18px;
+}
+
+.btn-call.cancle-support:hover {
+	color: #ffffff;
+	background: #13BF1A;
+}
+
+
+
+
 
 /* Icon Box
 -------------------------------------------------------------- */
