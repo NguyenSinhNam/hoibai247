@@ -4,10 +4,24 @@
 	.container-fluid {
 		max-width: 1470px;
 	}
+
+	
 }
 
 /* Media Queries
 -------------------------------------------------------------- */
+@media only screen and (max-width: 1439px) {
+	.login-user {
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+
+	.login-user .wrap-login {
+		padding: 90px 0;
+	}
+}
+
 @media only screen and (max-width: 1366px) {
 }
 
@@ -35,8 +49,29 @@
 		float: none;
 	}		
 
-	#mainnav {
+	#mainnav,
+	.login-user .image-login {
 		display: none;
+	}
+
+	.wrap-login .two-column {
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+
+	.login-user .wrap-login {
+		padding: 90px 0 50px;
+	}
+
+	.login-container.style1 .login-form {
+		position: static;
+		-webkit-transform: translate(0, 0);
+		   -moz-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		     -o-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 }
 
@@ -61,6 +96,14 @@
 		    -ms-transform: translate(0, 0);
 		     -o-transform: translate(0, 0);
 		        transform: translate(0, 0);
+	}
+
+	.login-container.style1 {
+		padding: 0;
+	}
+
+	.login-container.style1 .login-form {
+		padding: 30px 20px;
 	}
 }
 

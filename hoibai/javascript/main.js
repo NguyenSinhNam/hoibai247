@@ -103,6 +103,27 @@
             }); // headerFixed style1
         }
     };
+
+    var showLogin = function() {
+        var showLogin = $('.button-login a');
+        var deleteLogin = $('.login-user .delete-login')
+        showLogin.on('click',function(e) {
+            e.stopPropagation();
+            $(this).closest('.boxed').children('.login-user').addClass('open');
+            $('body').append('<div class="modal-backdrop fade show"></div>');
+        });
+        deleteLogin.on('click', function(){
+            $(this).closest('.boxed').children('.login-user').removeClass('open');
+            $('.modal-backdrop.fade.show').remove();
+        })
+        $('.login-user').on('click', function(e){
+            e.stopPropagation();
+        });
+        $('body').on('click', function(){
+           $('.login-user').removeClass('open');
+            $('.modal-backdrop.fade.show').remove();
+        });
+    }; // Show Search Button
     
     var goTop = function() {
         $(window).scroll(function() {
@@ -197,19 +218,117 @@
         });
     };
 
-    var countDown = function() {
-        var before = '<div class="square"><div class="numb">',
-            text = '</div><div class="text">';
-            if ($().countdown) {
-                $(".countdown").countdown('2018/12/22', function(event) {
-                  $(this).html(event.strftime(before + '%D' + text + 'Days</div></div>' + before + '%H' + text + 'Hours</div></div>' + before + '%M' + text + 'Minutes</div></div>' + before + '%S' + text + 'Seconds</div>'));
-                });
-            }      
+    var countdown = function() { 
+            var sec = 59;
+            var timer = setInterval(function() { 
+               $('.number-seconds').text(sec--);
+               if (sec == -1) {
+                  if (sec < 0) {sec = 0};
+               } 
+            }, 1000);
     };
+
+    var full_height = function(){   
+        if ($('.boxed').hasClass('page-full-screen')) {    
+            var get_full_height = $( window ).height();
+            $(".page-full-screen .full-screen").css({'height': get_full_height+'px', 'padding-top': get_full_height/5+'px'});
+            if ( matchMedia( 'only screen and (max-width: 767px)' ).matches ) {
+                $(".page-full-screen .full-screen").css({'height': get_full_height+'px', 'padding-top': get_full_height/15+'px'});
+            }
+        } 
+    }
+
+    var call_function = function(){
+        var args = {duration: 600};
+        $('.call-tabs').each(function() {
+            $(this).children('.content-tab-call').hide();
+            $(this).children('.content-tab-call.active').show();            
+
+            // if ( $(this).find('.menu-tab').children('li').hasClass('active') ) {
+            //     var liActive = $(this).find('.menu-tab').children('li.active').data('call');
+            //     //alert(liActive);
+            // }
+            
+
+        //     $(this).find('.menu-tab').children('li').on('click', function(e) { 
+        //         if( !$(this).is('.active') ) {
+        //             $(this).toggleClass('active');
+        //         } else {
+        //             $(this).toggleClass('active');
+        //         } 
+
+        //         if ( $(this).is('.active') ) {
+        //             var liActive = $(this).data('call');
+        //             // var hasclass = $(this).hasClass('call-voice');
+        //             // alert(hasclass);
+        //             if (liActive === 'call-voice-active' && $(this).hasClass('call-voice') ) {                        
+        //                 $(this).closest('.call-tabs').each(function() {
+        //                     $(this).children('.content-tab-voice').show();
+        //                     $(this).children('.content-tab-no-voice').hide();
+        //                 });
+        //             }
+        //         }else{
+        //             $(this).closest('.call-tabs').each(function() {
+        //                 $(this).children('.content-tab-voice').hide();
+        //                 $(this).children('.content-tab-no-voice').show();
+        //             });
+        //         }
+        //         e.preventDefault();
+        //     });
+        // });
+
+        
+
+        });
+
+        var btn_video_value, btn_voice_value, btn_end_value;        
+        $(".btn-call-video").on('click', function(e) {
+            btn_video_value = $(".btn-call-video").is(":checked");            
+            if (btn_video_value === true) {
+
+            }else{
+
+            }
+        });
+
+        $(".btn-call-voice").on('click', function(e) {
+            btn_voice_value = $(".btn-call-voice").is(":checked");
+            if (btn_voice_value == true) {                
+                $('.content-tab-voice').show();
+                $('.content-tab-no-voice').hide();           
+            }else{
+                $('.content-tab-voice').hide();
+                $('.content-tab-no-voice').show(); 
+            }
+
+        });
+
+        $(".btn-call-end").on('click', function(e) {
+            btn_end_value = $(".btn-call-end").is(":checked");
+            if (btn_end_value == true) {
+
+            }else{
+
+            }
+        });
+
+    }
+
+    var edit_account = function(){
+        $(".input-change-password").hide();
+        $("#checkbox-change-password").on('click', function(){
+            var checked = $("#checkbox-change-password").is(":checked");
+            if (checked == true) {
+                $(".input-change-password").show(500);
+            }else {
+                $(".input-change-password").hide(500);
+            }
+        });
+
+    }
 
     var removePreloader = function() { 
         $(window).load(function() { 
-
             $('.preloader').css('opacity', 0);
             setTimeout(function() {
                 $('.preloader').hide(); }, 1000           
@@ -226,11 +345,15 @@
             headerFixed_s1();
         }          
         responsiveMenu();
+        showLogin();
         swClick();
         goTop();
         topSearch();
         tabs();        
         countdown();
+        full_height(); 
+        call_function();
+        edit_account();
         removePreloader();
    	});
 
