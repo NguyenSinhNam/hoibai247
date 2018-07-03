@@ -3,9 +3,7 @@
 @media only screen and (min-width: 1440px) {
 	.container-fluid {
 		max-width: 1470px;
-	}
-
-	
+	}	
 }
 
 /* Media Queries
@@ -73,6 +71,180 @@
 		     -o-transform: translate(0, 0);
 		        transform: translate(0, 0);
 	}
+
+	/* header-style2 */
+	.header-style2 .nav-wrap {
+		display: block;
+	}
+
+	.wrap-menu-desktop {
+		display: none;
+	}
+
+	.header-style2 .btn-menu:before, 
+	.header-style2 .btn-menu:after, 
+	.header-style2 .btn-menu span {
+	    background-color: #13BF1A;
+	}
+
+	.header-style2 .btn-menu {
+	    margin: 10px 0px 0px 35px;
+	}
+
+	.header-style2 .menu-mobi a.thong-bao-top {
+		display: inline-block;
+    	margin-top: 10px;
+	}
+
+	.header-style2 .menu-mobi .icon-thong-bao-top {
+		font-size: 20px;
+	}
+
+	.header-style2 #mainnav-mobi {
+		height:100%;
+		background-color: #fff;
+	}
+
+	.header-style2 #mainnav-mobi > ul > li {
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+
+	.header-style2 #mainnav-mobi > ul > li > a {
+	    font-size: 15px;
+	    font-weight: 700;
+	    line-height: 80px;
+	    display: inline-block;
+	    width: 100%;
+	    position: relative;	    
+	    padding: 0;
+        height: 80px;
+        color: #747485;
+	}
+
+	.header-style2 #mainnav-mobi > ul > li > a > i {
+	    font-size: 15px;
+	    width: 30px;
+	    display: inline-block;
+	}
+
+	.header-style2 #mainnav-mobi ul li {
+		border: none;
+	}
+
+	.header-style2 {
+		border-bottom: 1px solid #E6E6EE;
+	}
+
+	.header-style2 #mainnav-mobi ul li:last-child {
+	    border-top: 1px solid #E6E6EE;
+	}
+
+	.header-style2 #mainnav-mobi ul li.overview a i {
+	    font-size: 12px;
+	}
+
+	.header-style2 #mainnav-mobi ul li.active a:before, 
+	.header-style2 #mainnav-mobi ul li a:hover:before, 
+	.header-style2 #mainnav-mobi ul li.active a, 
+	.header-style2 #mainnav-mobi ul li.active a i:before,
+	.header-style2 #mainnav-mobi ul > li > a:hover {
+	    opacity: 1;
+	    visibility: visible;
+	    color: #13BF1A;
+	}
+
+	.header-style2 #mainnav-mobi ul li .userLoginBox {
+		padding: 20px 0;		
+	}
+
+	.header-style2 #mainnav-mobi ul li .userLoginOutBox {
+		padding: 27px 0;		
+	}
+
+	.header-style2 #mainnav-mobi ul li .userLoginBox:before {
+		display: none;	
+	}
+
+	.header-style2 #mainnav-mobi .menu {
+		position: relative;
+		height: 90vh;
+	}
+
+	.header-style2 #mainnav-mobi .menu li.wrap-userboxtop {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	.one-two,
+	.box-left-no-padding,
+	.box-right-no-padding,
+	.box-left,
+	.box-right,
+	.danhsachcauhoi-gv .content-wrap .box-left,
+	.lichsucuocgoi-gv .content-wrap .box-left,
+	.danhsachcauhoi-gv .content-wrap .box-right,
+	.lichsucuocgoi-gv .content-wrap .box-right,
+	.one-seventh,
+	.one-third,
+	.chitietcauhoichohotro-gv .box-left, 
+	.chitietcauhoichohotro-gv .box-center, 
+	.chitietcauhoichohotro-gv .box-right {
+		width: 100%;
+	}
+
+	.chitietcauhoichohotro-gv .box-left, 
+	.chitietcauhoichohotro-gv .box-center, 
+	.chitietcauhoichohotro-gv .box-right {
+		padding: 0
+	}
+
+	.chitietcauhoichohotro-gv .box-left, 
+	.chitietcauhoichohotro-gv .box-right {
+		text-align: center;
+	}
+
+	.chitietcauhoichohotro-gv .wrap-icon-list > li > div {
+		display: inline-block;
+		min-width: 210px;
+		max-width: 210px;
+		margin-left: 48px;
+	}
+
+	.box-list.box-recent-calls {
+		margin-bottom: 30px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.bottom-copyright.v2 {
+		display: block;
+	}
+
+	.mobile-with-one-two {
+		width: 50% !important;
+	}
+
+	.box-container-fluid {
+		padding: 0;
+	}
+
+	.wrap-btn {
+		text-align: center;
+	    border-bottom: 1px solid #E6E6EE;
+	}
+
+	.mobile-margin-bottom42 {
+		margin-bottom: 42px;
+	}
+
+	h3 { line-height: 1.6; }
+	h4 { line-height: 1.6; }
 }
 
 /* All Mobile Sizes */
@@ -147,6 +319,17 @@
 		padding: 20px;
 	}
 
+	.list-recent-calls .item > ul > li:first-child {
+		display: block;
+		float: none !important;
+	}
+
+	.list-recent-calls .item .time .hours,
+	.list-recent-calls .item .time .day {
+		display: inline-block;
+		margin-bottom: 7px;
+		margin-right: 7px;
+	}
 }
 
 @media (max-width: 360px) {
