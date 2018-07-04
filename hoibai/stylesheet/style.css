@@ -573,6 +573,10 @@ a:hover i:before {
 	display: none;
 }
 
+.header-style2 .logo a > span {
+	color: #13bf1a;
+}
+
 .header-style2 #mainnav-mobi ul > li > a {
     text-decoration: none;
     height: 50px;
@@ -1359,8 +1363,8 @@ ul.list-item li .time {
 .avatar {
 	display: inline-block;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .avatar img {
@@ -1419,7 +1423,11 @@ ul.list-item li .time {
 
 .wrap-icon-list .icon-list .avatar-question i {
     font-size: 12px;
-    line-height: 22px;
+    line-height: 22px;    
+}
+
+.wrap-icon-list .icon-list .avatar-question i:before {
+	color: #ffffff;
 }
 
 .wrap-icon-list .icon-list .by-question {    
@@ -1939,6 +1947,16 @@ input[type=date] {
 	padding: 26px 26px;
 }
 
+.icon-box p,
+.image-box p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #747485;
+	text-align: center;
+	line-height: 22px;
+	font-weight: 400;
+}
+
 .icon-box .icon {
 	font-size: 80px;
 	margin-bottom: 30px;
@@ -2209,6 +2227,11 @@ td.question {
     color: #FFFFFF;
 }
 
+.btn-save i,
+.btn-save i:before {
+	color: #ffffff;
+}
+
 .btn-question-hs i:before {
 	color: #ffffff;
 }
@@ -2216,6 +2239,7 @@ td.question {
 .btn-question-hs i {
     position: relative;
     top: 2px;
+    line-height: 0;
 }
 
 .btn-edit:hover,
@@ -2510,6 +2534,284 @@ a.tip span:before {
 
 .button-no-text.delete {
 	font-size: 16px;
+}
+
+.taikhoan-hs .box-list, 
+.taikhoan-hs .icon-box, 
+.chinhsuataikhoan-hs .box-list, 
+.chinhsuataikhoan-hs .icon-box {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.taikhoan-hs .icon-box {
+	margin-bottom: 0;
+    padding: 43px 26px;
+}
+
+.margin-bottom0 {
+	margin-bottom: 0 !important;
+}
+
+.add-new-card i {
+    font-size: 18px;
+    top: 4px;
+}
+
+.lichsucuocgoichitiet-hs .wrap-icon-list .icon-list .user-question .avatar-question {
+    margin-top: 0px;
+    width: 36px;
+    height: 36px;
+}
+
+.lichsucuocgoichitiet-hs .box-left {
+    width: 20%;
+}
+
+.lichsucuocgoichitiet-hs .box-center {
+    width: 55%;
+}
+
+.btn-question-hs.cancle-question {
+    background: #F8F8F8;
+    border: 2px solid #DF2D39;
+    font-size: 13px;
+    color: #DF2D39;
+    text-align: center;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700;
+}
+
+.cancle-question i:before {
+	color: #DF2D39;
+}
+
+.btn-question-hs.cancle-question i {
+	font-size: 12px;
+    position: relative;
+    top: 0;
+}
+
+.icon-left i {
+	padding-right: 5px;
+}
+
+.btn-question-hs.cancle-question:hover {
+	border: 2px solid #13BF1A;
+	color: #13BF1A;
+}
+
+.cancle-question:hover i:before {
+	color: #13BF1A;
+}
+
+.wrap-teacher-list .teacher-list .user-question .avatar-question {
+    margin-top: 0px;
+    width: 36px;
+    height: 36px;
+}
+
+ul.wrap-teacher-list li {
+	padding: 20px 0;
+    border-bottom: 1px solid #E6E6EE;
+}
+
+ul.wrap-teacher-list li:first-child {
+	border-top: 1px solid #E6E6EE;
+}
+
+ul.wrap-teacher-list li .time {
+    font-size: 13px;
+    color: #747485;
+    line-height: 18px;
+    float: right;
+}
+
+.avatar-change {
+	position: relative;
+}
+
+.change-avatar {
+	width: 36px;
+	height: 36px;
+	line-height: 37px;
+	border-radius: 50%;
+	background-image: linear-gradient(-145deg, #FF5D6D 0%, #FE914F 100%);
+	box-shadow: 0 2px 4px 0 rgba(59,87,60,0.15);
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	margin-left: -18px;
+	text-align: center;
+}
+
+.chinhsuataikhoan-hs .avatar.avatar-change {
+	width: 200px;
+    height: 200px;
+}
+
+a:hover .change-avatar i,
+a:hover .change-avatar i:before {
+	color: #ffffff;
+}
+
+.chinhsuataikhoan-hs .icon-box {
+	margin-bottom: 0;
+    padding: 30.8px 26px;
+}
+
+/*napthemoi*/
+.logged-in.napthemoi .main-content {
+	background: #ffffff;
+	padding-top: 200px;
+}
+
+.napthemoi input {
+	height: 44px;
+}
+
+.wrap-input-nopthe {
+	position: relative;
+}
+
+.wrap-input-nopthe .check-hop-le {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 12px;
+    line-height: 0;
+}
+
+.wrap-input-nopthe .check-hop-le i {
+	font-size: 20px;
+}
+
+.wrap-btn-nopthe .huy-nopthe,
+.wrap-btn-nopthe .nopthe {
+	min-width: 240px;
+}
+
+.wrap-btn-nopthe .nopthe i {
+	font-size: 20px;
+	line-height: 0;
+    position: relative;
+    top: 5px;
+}
+
+.wrap-nopthe .title {
+	font-size: 36px;
+	color: #38383D;
+	letter-spacing: 0;
+	line-height: 56px;
+}
+
+.wrap-nopthe .sub-title {
+	font-size: 14px;
+	color: #333338;
+	line-height: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.wrap-nopthe .note .title {
+	font-size: 14px;
+	color: #FF606B;
+	line-height: 20px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.wrap-nopthe .note .content {
+	color: #333338;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.wrap-nopthe {
+	padding: 10px 0;
+}
+
+.btn-back.btn-huy i {
+	font-size: 20px;
+    line-height: 37px;
+}
+
+.napthemoi .header.header-style2 {
+    box-shadow: none;
+}
+
+/*dangcauhoimoi*/
+.logged-in.dangcauhoimoi .main-content {
+	background: #ffffff;
+	padding-top: 100px;
+}
+
+.dangcauhoimoi input {
+	height: 44px;
+}
+
+.wrap-input-dangcauhoimoi {
+	position: relative;
+}
+
+.wrap-btn-dangcauhoimoi .huy-dangcauhoimoi,
+.wrap-btn-dangcauhoimoi .dangcauhoimoi {
+	min-width: 240px;
+}
+
+.wrap-btn-dangcauhoimoi .dangcauhoimoi i {
+	font-size: 20px;
+	line-height: 0;
+    position: relative;
+    top: 5px;
+}
+
+.wrap-dangcauhoimoi .title {
+	font-size: 36px;
+	color: #38383D;
+	letter-spacing: 0;
+	line-height: 56px;
+}
+
+.wrap-dangcauhoimoi .sub-title {
+	font-size: 14px;
+	color: #333338;
+	line-height: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.wrap-dangcauhoimoi .note .title {
+	font-size: 14px;
+	color: #FF606B;
+	line-height: 20px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.wrap-dangcauhoimoi .note .content {
+	color: #333338;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.wrap-dangcauhoimoi {
+	padding: 10px 0;
+}
+
+.btn-back.btn-huy-dangcauhoimoi i {
+	font-size: 20px;
+    line-height: 37px;
+}
+
+.dangcauhoimoi .header.header-style2 {
+    box-shadow: none;
+}
+
+.dangcauhoimoi textarea {
+	min-height: 220px;
 }
 
 /* Flat Tab
