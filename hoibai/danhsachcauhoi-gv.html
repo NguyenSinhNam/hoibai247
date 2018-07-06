@@ -30,51 +30,83 @@
     <link href="icon/favicon.png" rel="shortcut icon">
 
 </head>
-    <body>
-        <div class="boxed blog logged-in danhsachcauhoi-gv">
+    <body class="background_f8f8f8">
+        <div class="boxed blog logged-in danhsachcauhoi-gv header-style2">
         <!-- Preloader -->
-        <!-- <div class="preloader">
+        <div class="preloader">
             <div class="clear-loading loading-effect-2">
                 <span></span>
             </div>
-        </div> -->
+        </div>
         <header id="header" class="header header-style2">
             <div class="container-fluid">
                 <div class="box-container-fluid">
                     <div class="row">                    
-                        <div class="col-md-2">
+                        <div class="col-md-2 mobile-with-one-two">
                             <div id="logo" class="logo">
                                 <a href="index.html" title="Hoibai247">Hoibai<span>247</span></a>
                             </div><!-- /#logo -->
                         </div><!-- /.col-md-3 -->
-                        <div class="col-md-10 desktop-right">
-                            <div class="wrap-show-search">
-                                <div class="top-search">                        
-                                    <form action="#" id="searchform-all" method="get">
-                                        <input type="search" id="search" class="search" placeholder="Tìm kiếm...">
-                                        <input type="submit" value="" id="searchsubmit">
-                                    </form>
-                                </div> <!-- /.top-search -->
-                            </div>  <!-- /.wrap-show-search -->
-                            <div class="mainboxtop">
-                                <ul>
-                                    <li><a href="#"><i class="icon-danh-sach-hoc-sinh"></i></a></li>
-                                    <li><a href="#"><i class="icon-thenaptop"></i></a></li>
-                                    <li><a href="#"><i class="icon-inbox-top"></i></a></li>
-                                    <li><a href="#"><i class="icon-thong-bao-top"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="userboxtop">
-                                <div class="userLoginBox">
-                                    <a href="#" class="use_img"><img src="images/gv/ava-giao-vien.png" alt=""></a>
-                                    <a href="#" class="use_name">GV. Nguyễn Văn An</a>
+                        <div class="col-md-10 mobile-with-one-two desktop-right">
+                            <div class="nav-wrap menu-mobi">
+                                <a href="#" class="thong-bao-top"><i class="icon-thong-bao-top"></i></a>
+                                <div class="btn-menu">
+                                    <span></span>
+                                </div><!-- //mobile menu button -->
+                                <nav id="mainnav" class="mainnav">
+                                    <ul class="menu">
+                                        <li class="overview"><a href="tongquan-gv.html"><i class="icon-tong-quan-df"></i>Tổng quan</a></li>
+                                        <li class="question active"><a href="danhsachcauhoi-gv.html"><i class="icon-cau-hoi-df"></i>Câu hỏi</a></li>
+                                        <li class="call-history"><a href="lichsucuocgoi-gv.html"><i class="icon-lich-su-cuoc-goi-df"></i>Lịch sử cuộc gọi</a></li>
+                                        <li class="personal-page"><a href="taikhoan-gv.html"><i class="icon-Shape-Copy-7"></i>Trang cá nhân</a></li>
+                                        <li class="notification"><a href="#"><i class="icon-thong-bao-top"></i>Thông báo</a></li>
+                                        <li class="wrap-userboxtop">
+                                            <div class="userboxtop">
+                                                <div class="userLoginBox">
+                                                    <a href="#" class="use_img"><img src="images/gv/ava-giao-vien.png" alt=""></a>
+                                                    <a href="#" class="use_name">GV. Nguyễn Văn An</a>
+                                                </div>
+                                            </div> <!-- userboxtop -->
+
+                                            <div class="userboxtop float-right">
+                                                <div class="userLogOutBox">
+                                                    <a href="#" class="use_img"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                                                    <a href="#" class="use_name">Đăng Xuất</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul><!-- /.menu -->
+                                </nav><!-- /#mainnav -->
+                            </div><!-- /.nav-wrap -->
+
+                            <div class="wrap-menu-desktop">
+                                <div class="wrap-show-search">
+                                    <div class="top-search">                        
+                                        <form action="#" id="searchform-all" method="get">
+                                            <input type="search" id="search" class="search" placeholder="Tìm kiếm...">
+                                            <input type="submit" value="" id="searchsubmit">
+                                        </form>
+                                    </div> <!-- /.top-search -->
+                                </div>  <!-- /.wrap-show-search -->
+                                <div class="mainboxtop">
+                                    <ul>
+                                        <li><a href="#"><i class="icon-danh-sach-hoc-sinh"></i></a></li>
+                                        <li><a href="#"><i class="icon-thenaptop"></i></a></li>
+                                        <li><a href="#"><i class="icon-inbox-top"></i></a></li>
+                                        <li><a href="#"><i class="icon-thong-bao-top"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="userboxtop">
+                                    <div class="userLoginBox">
+                                        <a href="#" class="use_img"><img src="images/gv/ava-giao-vien.png" alt=""></a>
+                                        <a href="#" class="use_name">GV. Nguyễn Văn An</a>
+                                    </div>
                                 </div>
                             </div>
                         </div><!-- /.col-md-9 -->                    
                     </div><!-- /.row -->
                 </div>             
             </div><!-- /.container-fluid -->
-
         </header>
         <section class="main-content">
             <div class="container-fluid">
@@ -98,12 +130,14 @@
                                 <div class="box-percent">
                                     <div class="box-left">
                                         <div class="flat-tabs" data-effect="fadeIn">
-                                           <ul class="menu-tab clearfix">
-                                              <li class="active"><a href="#">Câu hỏi chờ hỗ trợ</a></li>
-                                              <li class=""><a href="#" class="urgent-question">Câu hỏi khẩn cấp</a></li>
-                                              <li class=""><a href="#">Câu hỏi chưa hoàn thành</a></li>
-                                              <li class=""><a href="#">Câu hỏi đã hỗ trợ</a></li>
-                                           </ul>
+                                            <div class="wrap-menu-tab">
+                                                <ul class="menu-tab clearfix">
+                                                  <li class="active"><a href="#">Câu hỏi chờ hỗ trợ</a></li>
+                                                  <li class=""><a href="#" class="urgent-question">Câu hỏi khẩn cấp</a></li>
+                                                  <li class=""><a href="#">Câu hỏi chưa hoàn thành</a></li>
+                                                  <li class=""><a href="#">Câu hỏi đã hỗ trợ</a></li>
+                                                </ul>
+                                            </div>
                                            <!-- /.menu-tab -->
                                            <div class="content-tab">
                                                 <div class="content-inner active"> 
@@ -489,13 +523,14 @@
                                 </div>
                             </div><!-- /.content-wrap -->                        
                         </div><!-- /.col-lg-10 -->
+                    <a href="#" class="bottom-copyright v2">Hoibai247 © 2018</a>
                     </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.main-content -->
         
         <div class="button-go-top">
             <a href="#" title="" class="go-top">
-                <i class="fa fa-chevron-up"></i>
+                <i class="icon-next-pagination"></i>
             </a>
         </div>
     

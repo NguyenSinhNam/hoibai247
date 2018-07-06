@@ -30,14 +30,14 @@
     <link href="icon/favicon.png" rel="shortcut icon">
 
 </head>
-    <body>
+    <body class="background_f8f8f8">
         <div class="boxed blog logged-in header-style2 lichsucuocgoi-gv">
         <!-- Preloader -->
-        <!-- <div class="preloader">
+        <div class="preloader">
             <div class="clear-loading loading-effect-2">
                 <span></span>
             </div>
-        </div> -->
+        </div>
         <header id="header" class="header header-style2">
             <div class="container-fluid">
                 <div class="box-container-fluid">
@@ -69,8 +69,8 @@
                                             </div> <!-- userboxtop -->
 
                                             <div class="userboxtop float-right">
-                                                <div class="userLoginOutBox">
-                                                    <a href="#" class="use_img"><i class="icon-Ten-Dang-Nhap"></i></a>
+                                                <div class="userLogOutBox">
+                                                    <a href="#" class="use_img"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
                                                     <a href="#" class="use_name">Đăng Xuất</a>
                                                 </div>
                                             </div>
@@ -128,6 +128,23 @@
 
                     <div class="col-lg-10">
                         <div class="content-wrap clearfix">
+                            <div class="box-list box-filter-time mobile-display margin-bottom30">
+                                <div class="box-title clearfix">
+                                    <h3 class="title">Lọc theo thời gian</h3>
+                                </div> 
+                                <form class="form-filter" action="danhsachketqualichsuloc-gv.html" method="post">
+                                    <div class="input-date-filter input-date-form">
+                                        <input type="date" name="datefrom">
+                                        <span class="input-date-text">Từ ngày:</span>
+                                    </div>
+                                    <div class="input-date-filter input-date-to">
+                                        <input type="date" name="dateto">
+                                        <span class="input-date-text">Đến ngày:</span>
+                                    </div>
+                                    <button class="btn-filter has-icon-left"><i class="icon-loc-ket-qua"></i> Lọc kết quả</button>
+                                </form>
+                            </div><!-- box-filter-time -->
+
                             <div class="box-percent">
                                 <div class="box-left">
                                     <div class="box-percent">
@@ -413,7 +430,7 @@
                                     </div>
                                 </div>
                                 <div class="box-right">
-                                    <div class="box-list box-filter-time margin-bottom30">
+                                    <div class="box-list box-filter-time margin-bottom30 mobile-display-none">
                                         <div class="box-title clearfix">
                                             <h3 class="title">Lọc theo thời gian</h3>
                                         </div> 
@@ -457,7 +474,7 @@
         
         <div class="button-go-top">
             <a href="#" title="" class="go-top">
-                <i class="fa fa-chevron-up"></i>
+                <i class="icon-next-pagination"></i>
             </a>
         </div>
     

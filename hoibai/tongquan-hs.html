@@ -30,14 +30,14 @@
     <link href="icon/favicon.png" rel="shortcut icon">
 
 </head>
-    <body>
+    <body class="background_f8f8f8">
         <div class="boxed blog logged-in header-style2 tongquan-hs page-hs">
         <!-- Preloader -->
-        <!-- <div class="preloader">
+        <div class="preloader">
             <div class="clear-loading loading-effect-2">
                 <span></span>
             </div>
-        </div> -->
+        </div>
         <header id="header" class="header header-style2">
             <div class="container-fluid">
                 <div class="box-container-fluid">
@@ -49,6 +49,8 @@
                         </div><!-- /.col-md-3 -->
                         <div class="col-md-10 mobile-with-one-two desktop-right">
                             <div class="nav-wrap menu-mobi">
+                                <a href="#" class="nap-the-moi-top"><i class="icon-nap-the-moi"></i></a>
+                                <a href="#" class="tao-cau-hoi-top"><i class="icon-tao-cau-hoi-moi"></i></a>
                                 <a href="#" class="thong-bao-top"><i class="icon-thong-bao-top"></i></a>
                                 <div class="btn-menu">
                                     <span></span>
@@ -58,19 +60,20 @@
                                         <li class="overview active"><a href="tongquan-hs.html"><i class="icon-tong-quan-df"></i>Tổng quan</a></li>
                                         <li class="question"><a href="danhsachcauhoi-hs.html"><i class="icon-cau-hoi-df"></i>Câu hỏi</a></li>
                                         <li class="call-history"><a href="lichsucuocgoi-hs.html"><i class="icon-lich-su-cuoc-goi-df"></i>Lịch sử cuộc gọi</a></li>
+                                        <li class="manage-tag-feeds"><a href="danhsachthenap-hs.html"><i class="icon-thenaptop"></i>Quản lý thẻ nạp</a></li>
                                         <li class="personal-page"><a href="taikhoan-hs.html"><i class="icon-Shape-Copy-7"></i>Trang cá nhân</a></li>
                                         <li class="notification"><a href="#"><i class="icon-thong-bao-top"></i>Thông báo</a></li>
                                         <li class="wrap-userboxtop">
                                             <div class="userboxtop">
                                                 <div class="userLoginBox">
                                                     <a href="#" class="use_img"><img src="images/gv/ava-hoc-sinh.png" alt=""></a>
-                                                    <a href="#" class="use_name">GV. Nguyễn Văn An</a>
+                                                    <a href="#" class="use_name">HS. Nguyễn Xuân Thanh</a>
                                                 </div>
                                             </div> <!-- userboxtop -->
 
                                             <div class="userboxtop float-right">
-                                                <div class="userLoginOutBox">
-                                                    <a href="#" class="use_img"><i class="icon-Ten-Dang-Nhap"></i></a>
+                                                <div class="userLogOutBox">
+                                                    <a href="#" class="use_img"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
                                                     <a href="#" class="use_name">Đăng Xuất</a>
                                                 </div>
                                             </div>
@@ -98,7 +101,7 @@
                                 <div class="userboxtop">
                                     <div class="userLoginBox">
                                         <a href="#" class="use_img"><img src="images/gv/ava-hoc-sinh.png" alt=""></a>
-                                        <a href="#" class="use_name">HS. Nguyễn Văn An</a>
+                                        <a href="#" class="use_name">HS. Nguyễn Xuân Thanh</a>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +133,7 @@
                         <div class="col-lg-10">
                             <div class="content-wrap clearfix">
                                 <div class="box-content-top">
-                                    <div class="box-percent">
+                                    <div class="box-percent clearfix">
                                         <div class="one-two">
                                             <div class="question-recent-new">                                                
                                                 <div class="box-question clearfix">  
@@ -168,7 +171,75 @@
                                                     </div>
                                                 </div><!-- box-question -->
                                             </div><!-- question-recent-new -->
+                                        </div>
+                                        <div class="one-two">
+                                            <div class="box-percent clearfix">
+                                                <div class="one-two">
+                                                    <div class="icon-box new-question">
+                                                        <div class="content">
+                                                            <div class="title">Bạn đang có một câu hỏi cần được giáo viên hỗ trợ ?</div>
+                                                        </div>
+                                                        <div class="wrap-btn-create-question text-center"><a href="dangcauhoimoi-hs.html" class="btn-question-hs has-icon-left"><i class="icon-tao-cau-hoi-moi"></i>Tạo câu hỏi mới</a></div>
+                                                    </div><!-- icon-box -->
+                                                </div>
 
+                                                <div class="one-two">
+                                                    <div class="icon-box">
+                                                        <div class="icon supportout"><i class="icon-cauhoi-daduochotro"></i></div>
+                                                        <div class="content">
+                                                            <div class="title">Câu hỏi chờ hỗ trợ</div>
+                                                            <div class="content">4 <span>câu hỏi</span></div>
+                                                        </div>
+                                                    </div><!-- icon-box -->
+                                                </div>
+                                            </div><!-- box-percent -->                                            
+                                        </div>
+                                    </div>
+                                    <div class="box-percent clearfix">
+                                        <div class="one-two float-right">
+                                            <div class="box-percent clearfix">
+                                                <div class="one-two">
+                                                    <div class="icon-box">
+                                                        <div class="icon"><i class="icon-thoigian-connhan-hotro"></i></div>
+                                                        <div class="content">
+                                                            <div class="title">Thời gian còn được nhận hỗ trợ</div>
+                                                            <div class="content">2<span> giờ </span>05 <span>phút</span></div>
+                                                        </div>
+                                                    </div><!-- icon-box -->
+                                                </div>
+
+                                                <div class="one-two">
+                                                    <div class="icon-box">
+                                                        <div class="icon question-prompt"><i class="icon-cauhoi-daduochotro"></i></div>
+                                                        <div class="content">
+                                                            <div class="title">Câu hỏi khẩn cấp</div>
+                                                            <div class="content">0 <span>câu hỏi</span></div>       
+                                                        </div>
+                                                    </div><!-- icon-box -->
+                                                </div>
+                                                
+                                                <div class="one-two">
+                                                    <div class="icon-box">
+                                                        <div class="icon"><i class="icon-ban-da-ho-tro-thanh-cong"></i></div>
+                                                        <div class="content">
+                                                            <div class="title">Tổng thời gian đã nhận hỗ trợ</div>
+                                                             <div class="content">1022 <span>giờ</span> 14 <span>phút</span></div>
+                                                        </div>
+                                                    </div><!-- icon-box -->
+                                                </div>
+
+                                                <div class="one-two">
+                                                    <div class="icon-box">
+                                                        <div class="icon"><i class="icon-cauhoi-daduochotro"></i></div>
+                                                        <div class="content">
+                                                            <div class="title">Câu hỏi đã được hỗ trợ</div>
+                                                            <div class="content">31 <span>câu hỏi</span></div>
+                                                        </div>
+                                                    </div><!-- icon-box -->
+                                                </div>
+                                            </div><!-- box-percent -->                                            
+                                        </div>
+                                        <div class="one-two float-left">
                                             <div class="box-list box-recent-calls">
                                                 <div class="box-title clearfix">
                                                     <h3 class="title">Các cuộc gọi gần đây nhất</h3>
@@ -327,68 +398,6 @@
                                                 </ul>
                                             </div><!-- box-recent-calls -->
                                         </div>
-                                        <div class="one-two">
-                                            <div class="box-percent clearfix">
-                                                <div class="one-two">
-                                                    <div class="icon-box new-question">
-                                                        <div class="content">
-                                                            <div class="title">Bạn đang có một câu hỏi cần được giáo viên hỗ trợ ?</div>
-                                                        </div>
-                                                        <div class="wrap-btn text-center"><a href="#" class="btn-question-hs has-icon-left"><i class="icon-tao-cau-hoi-moi"></i>Tạo câu hỏi mới</a></div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-
-                                                <div class="one-two">
-                                                    <div class="icon-box">
-                                                        <div class="icon supportout"><i class="icon-cauhoi-daduochotro"></i></div>
-                                                        <div class="content">
-                                                            <div class="title">Câu hỏi chờ hỗ trợ</div>
-                                                            <div class="content">4 <span>câu hỏi</span></div>
-                                                        </div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-
-                                                <div class="one-two">
-                                                    <div class="icon-box">
-                                                        <div class="icon"><i class="icon-thoigian-connhan-hotro"></i></div>
-                                                        <div class="content">
-                                                            <div class="title">Thời gian còn được nhận hỗ trợ</div>
-                                                            <div class="content">2<span> giờ </span>05 <span>phút</span></div>
-                                                        </div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-
-                                                <div class="one-two">
-                                                    <div class="icon-box">
-                                                        <div class="icon question-prompt"><i class="icon-cauhoi-daduochotro"></i></div>
-                                                        <div class="content">
-                                                            <div class="title">Câu hỏi khẩn cấp</div>
-                                                            <div class="content">0 <span>câu hỏi</span></div>       
-                                                        </div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-                                                
-                                                <div class="one-two">
-                                                    <div class="icon-box">
-                                                        <div class="icon"><i class="icon-ban-da-ho-tro-thanh-cong"></i></div>
-                                                        <div class="content">
-                                                            <div class="title">Tổng thời gian đã nhận hỗ trợ</div>
-                                                             <div class="content">1022 <span>giờ</span> 14 <span>phút</span></div>
-                                                        </div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-
-                                                <div class="one-two">
-                                                    <div class="icon-box">
-                                                        <div class="icon"><i class="icon-cauhoi-daduochotro"></i></div>
-                                                        <div class="content">
-                                                            <div class="title">Câu hỏi đã được hỗ trợ</div>
-                                                            <div class="content">31 <span>câu hỏi</span></div>
-                                                        </div>
-                                                    </div><!-- icon-box -->
-                                                </div>
-                                            </div><!-- box-percent -->                                            
-                                        </div>
                                     </div>
                                 </div>
                             </div><!-- /.content-wrap -->                        
@@ -400,7 +409,7 @@
         
         <div class="button-go-top">
             <a href="#" title="" class="go-top">
-                <i class="fa fa-chevron-up"></i>
+                <i class="icon-next-pagination"></i>
             </a>
         </div>
     
